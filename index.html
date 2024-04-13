@@ -10,13 +10,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
 </head>
 <body>
     <!-- whatsapp icon -->
     <a href="https://wa.me/97455555555" id="whatsapp" target="_blank">
         <img src="./assets/images/whatsapp-icon.png" alt="Whatsapp" class="whatsapp_icon">
     </a>
-<nav>
+<!-- <nav>
     <img src="./assets/images/logo.jpg" alt="Al Qadi International" id="logo">
     <ul>
         <li><a href="#about">About Us</a></li>
@@ -25,7 +33,45 @@
         <li><a href="#vision">Vision and Mission</a></li>
         <li><a href="#products">Our Products</a></li>
     </ul>
-</nav>
+</nav> -->
+
+<header>
+    <nav class="nav-wrapper" >
+      <div class="container" >
+        <img class="brand-logo" src="./assets/images/logo.jpg" alt="Al Qadi International" id="logo">
+
+        <!-- <a href="" class="brand-logo" style="color:#28231C;">Al Qadi International</a> -->
+        <a href="" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons"style="color:#28231C;">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down" >
+          <li><a href="#photos" style="color:#28231C;" >Our Clients</a></li>
+          <li><a href="#services"style="color:#28231C;">Vision and Mission</a></li>
+          <li><a href="#contact"style="color:#28231C;">Contact</a></li>
+        </ul>
+        <ul class="sidenav transparent sidenav-close " id="mobile-menu">
+          <br>
+          <li><a href="#photos"  >Photos</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a><i class="fab fa-instagram white-text"></i></a></li>
+          <li><a><i class="fab fa-facebook white-text"></i></a></li>
+          <li><a><i class="fab fa-Twitter white-text"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+<!-- <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav> -->
 <section id="lander">
     <div class="content">
         <h1>Al Qadi International</h1>
@@ -156,5 +202,23 @@
     <script>
         new PureCounter();
     </script>     
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.sidenav').sidenav();
+          $('.materialboxed').materialbox();
+          $('.parallax').parallax();
+          $('.tabs').tabs();
+          $('.datepicker').datepicker({
+            disableWeekends: true
+          });
+          $('.tooltipped').tooltip();
+          $('.scrollspy').scrollSpy();
+        });
+        
+        </script>
+        
 </body>
 </html>
