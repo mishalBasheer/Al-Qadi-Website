@@ -10,7 +10,7 @@
   }
   
 body {
-    font-family: "Raleway", sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     background-color: white;
@@ -218,4 +218,12 @@ nav ul li a:hover {
 #footer{
     padding:10px;
     background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#map{
+    max-width: 20vw;
+    max-height: 20vw;
 }
