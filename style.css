@@ -171,16 +171,33 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     padding-top: 2vh;
+    padding-left: var(--main-padding-left);
+    padding-right: var(--main-padding-left);
 }
-#clients .client_logos img{
-    max-width: 30%;
+#clients .client_logos div{
+    /* set max width as one cell size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients .client_logos div img{
+    max-width: 40%;
+}
+#grand, #safari, #ffc, #ansar, #retail-mart{
+    max-width: 100%  !important;
 }
 #clients .client_logos{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    /*one row of 4 and another of 3*/
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     padding-top: 7vh;
     padding-bottom: 7vh;
+    row-gap: 5vh;
+    column-gap: 5vw;
+    grid-auto-rows: 1fr;
+    grid-column: 1fr;
+
 }
 
 #mission{
