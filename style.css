@@ -83,12 +83,13 @@ nav ul li a:hover {
     /* set bg-33.jpg as the background image */
     background-image: linear-gradient(111deg, rgb(25.49% 70.196% 28.627%) 0%, rgb(25.491% 70.196% 28.629% / 0.9999847412109375) 6.25%, rgb(25.508% 70.189% 28.645% / 0.999755859375) 12.5%, rgb(25.578% 70.163% 28.716% / 0.9987640380859375) 18.75%, rgb(25.767% 70.09% 28.906% / 0.99609375) 25%, rgb(26.167% 69.938% 29.308% / 0.9904632568359375) 31.25%, rgb(26.894% 69.661% 30.039% / 0.980224609375) 37.5%, rgb(28.091% 69.205% 31.242% / 0.9633636474609375) 43.75%, rgb(29.926% 68.505% 33.088% / 0.9375) 50%, rgb(32.596% 67.487% 35.773% / 0.8998870849609375) 56.25%, rgb(36.321% 66.067% 39.518% / 0.847412109375) 62.5%, rgb(41.347% 64.151% 44.572% / 0.7765960693359375) 68.75%, rgb(47.949% 61.634% 51.21% / 0.68359375) 75%, rgb(56.424% 58.404% 59.732% / 0.5641937255859375) 81.25%, rgb(67.098% 54.335% 70.465% / 0.413818359375) 87.5%, rgb(80.321% 49.294% 83.761% / 0.2275238037109375) 93.75%, rgb(96.471% 43.137% 100% / 0) 100% ), url('./assets/images/bg-33.jpg');
     min-height: 60vh;
-    padding-top: 20vh;
+    /* padding-top: 20vh; */
     padding-left: var(--main-padding-left);
     color: white;
     display: flex;
     flex-direction: row;
-    
+    justify-content: center;
+    align-items: center;
 }
 #lander div{
     /*50% of the lander  */
@@ -280,10 +281,18 @@ nav ul li a:hover {
         width: calc(100% - 2*var(--main-padding-left));
         padding: 5%;
         padding-left: var(--main-padding-left);
-        padding-right: var(--main-padding-left);
+        text-indent: 3em;
     }
     #mission .card{
         padding:5%;
+    }
+    #footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    #map{
+        max-width: 50vw;
+        max-height: 50vw;
     }
 }
 
