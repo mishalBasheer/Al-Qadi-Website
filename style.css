@@ -16,7 +16,7 @@ body {
     background-color: white;
     color: var(--main-text-color);
     overscroll-behavior-x: none;
-    overscroll-behavior-y: none
+    overscroll-behavior-y: none;
 }
 
 #whatsapp{
@@ -114,9 +114,14 @@ nav ul li a:hover {
     padding-bottom: 3vh;
     /* justify-content: center; */
 }
-#brands h2, #clients h2, #mission h2, #stats h2{
+#brands h2, #clients h2, #mission h2{
     /* write font size in em */
     font-size: 2em;
+    font-weight: bolder;
+    color: #256529;
+}
+#stats h2{
+    font-weight: bolder;
 }
 #brands .logos{
     display: flex;
@@ -216,6 +221,7 @@ nav ul li a:hover {
     padding:20px;
     justify-content: center;
     align-items: center;
+    /* color: #256529; */
     /* background-color: #A4CAB6; */
 }
 
@@ -238,6 +244,7 @@ nav ul li a:hover {
     margin: 0;
     font-size: x-large;
     padding: 5px;
+    font-weight: bolder;
 }
 
 #mission .card p{
