@@ -114,6 +114,10 @@ nav ul li a:hover {
     padding-bottom: 3vh;
     /* justify-content: center; */
 }
+#brands h2, #clients h2, #mission h2, #stats h2{
+    /* write font size in em */
+    font-size: 2em;
+}
 #brands .logos{
     display: flex;
     flex-direction: row;
@@ -213,11 +217,10 @@ nav ul li a:hover {
     /* background-color: #A4CAB6; */
 }
 
-#mission .card img{
+#mission .card-container img{
     max-width: 50%;
 }
-
-#mission .card{
+#mission .card-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -229,7 +232,7 @@ nav ul li a:hover {
     min-width: 0;
 }
 
-#mission .card h2{
+#mission .card-container h2{
     margin: 0;
     font-size: xx-large;
     padding: 5px;
