@@ -106,32 +106,36 @@ nav ul li a:hover {
     font-size: 3em;
 }
 #brands{
-    padding-top: 3vh;
     padding-left: var(--main-padding-left);
     padding-right: var(--main-padding-left);
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 3vh;
     /* justify-content: center; */
 }
 #brands .logos{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(5, 1fr); */
+    gap: 30px;
     justify-items: center; /* Add this line */
     /* padding: 20px; */
 }
-#brands .card{
+
+#brands .card-container{
+    flex: 1 1 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    border-radius: 10%;
-    padding: 5%;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
+    /* border-radius: 10%; */
+    /* padding: 5%; */
 }
-#brands .card img{
-    max-width: 25vh;
+#brands .card-container img{
+    max-width: 10vw;
 }
 
 
@@ -293,6 +297,9 @@ nav ul li a:hover {
     #map{
         max-width: 50vw;
         max-height: 50vw;
+    }
+    #brands .card-container img{
+        max-width: 25vw;
     }
 }
 
