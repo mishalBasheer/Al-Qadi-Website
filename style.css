@@ -213,12 +213,14 @@ nav ul li a:hover {
     display: flex;
     flex-direction: row;
     gap:2vw;
-    padding:10px;
+    padding:20px;
+    justify-content: center;
+    align-items: center;
     /* background-color: #A4CAB6; */
 }
 
 #mission .card-container img{
-    max-width: 50%;
+    width: 15%;
 }
 #mission .card-container{
     display: flex;
@@ -234,7 +236,7 @@ nav ul li a:hover {
 
 #mission .card-container h2{
     margin: 0;
-    font-size: xx-large;
+    font-size: x-large;
     padding: 5px;
 }
 
